@@ -6,7 +6,7 @@ if (Array.isArray(args)) {
     let val = parseInt(args[x]);
 
     if (Number.isInteger(val) && val > 0) {
-      setTimeout(()=>{
+      setTimeout(() => {
         process.stdout.write('\x07');
         console.log('beep');
       },(val * 1000));
